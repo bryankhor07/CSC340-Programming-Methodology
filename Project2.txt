@@ -1,0 +1,88 @@
+Name: Ingredient
+Purpose: Storing the name, quantity, and unit of the ingredient.
+Variables:
+● private string ingredientName
+- Stores the name of the ingredient.
+● private string ingredientAmount
+- Stores the quantity of the ingredient.
+● private string unit
+- Stores the unit measurement of the ingredient.
+Methods:
+● Ingredient(string ingredientName, string ingredientAmount, string unit)
+- Constructor. Initializes the name, amount, and unit of the ingredient.
+● Ingredient()
+- Default constructor.
+● string getIngredientName()
+- Returns the name of the ingredient.
+● float getIngredientAmount()
+- Returns the quantity of the ingredient.
+● string getUnit()
+- Returns the unit measurement of the ingredient.
+● void setIngredientName(string ingredientName)
+- Sets the value of ingredientName to the given name.
+● void setIngredientAmount(string ingredientAmount)
+- Sets the value of ingredientAmount to the given amount.
+● void setUnit(string unit)
+- Sets the value of unit to the given unit.
+Usage:
+● The Ingredient class is used by the Recipe class to store the name, quantity,
+and unit of the ingredient.
+
+Name: Recipe
+Purpose: Allow the user to create a new recipe, store the ingredients used in each
+recipe, and store instructions for completing the recipe step by step.
+Variables:
+● private string recipeName
+- Stores the name of the recipe.
+● private vector<Ingredient> ingredients
+- Stores the ingredients of the recipe.
+● private vector<string> instructions
+- Stores the instructions for the recipe.
+Methods:
+● Recipe(string recipeName)
+- Constructor. Initializes the name of the recipe.
+● Recipe()
+- Default constructor.
+● string getRecipeName()
+- Returns the name of the recipe.
+● void setRecipeName(string recipeName)
+- Sets the value of the recipe name to the given name.
+● void addIngredient(string name, string amount, string unit)
+- Adds an ingredient to the recipe.
+● void removeIngredient(string name)
+- Removes an ingredient from the recipe.
+● void getIngredients()
+- Returns the ingredients of the recipe.
+● void addInstruction(string instruction)
+- Adds an instruction to the recipe.
+● void removeInstruction(int index)
+- Removes an instruction from the recipe.
+● void getInstructions()
+- Returns the instructions of the recipe step by step.
+● void storeInstructions(int numOfSteps)
+- Store the instructions of the recipe step by step.
+Usage:
+● This class is a composition of the Ingredient class and is used by the
+RecipeBook class to store new recipes.
+
+Name: RecipeBook
+Purpose: Allow users to store recipes and browse the available recipes and required
+ingredients. It also allows the user to follow a recipe step by step.
+Variables:
+● private vector<Recipe> recipes
+- Stores all the recipes.
+Methods:
+● RecipeBook()
+- Default Constructor. Creates an empty recipe book.
+● void addRecipe(Recipe recipe)
+- Adds a recipe to the recipe book.
+● void removeRecipe(string recipeName)
+- Removes a recipe from the recipe book.
+● void getRecipes()
+- Allow the user to browse the available recipes and required ingredients.
+● void followRecipe(string name)
+- Allows the user to follow a recipe step by step.
+Usage:
+● This class is a composition of the Recipe class to store new recipes. This class
+also displays the available recipes and allows the user to follow a recipe step by
+step.

@@ -1,6 +1,6 @@
 #pragma once
 #include<iostream>
-#include"Coordinate.h"
+#include"Proj3Coordinate.h"
 using namespace std;
 
 class LocationBook {

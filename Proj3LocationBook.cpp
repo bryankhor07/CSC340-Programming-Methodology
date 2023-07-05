@@ -1,5 +1,5 @@
-#include"LocationBook.h"
-#include"Coordinate.h"
+#include"Proj3LocationBook.h"
+#include"Proj3Coordinate.h"
 #include<iostream>
 #include<cmath>
 using namespace std;

@@ -1,0 +1,55 @@
+# C++ Project 1 Description
+You’re working on a GPS application which lets the user record the coordinates of places they
+want to revisit. For example, a user might record the location of nice places to take pictures
+while on a hike. A location’s coordinates are a pair of integers X and Y.
+
+Main Method:
+● Use two arrays to store up to 10 x-coordinate values and 10 y-coordinate values.
+● Let the user choose from one of the following options:
+1) Store a new location
+2) Remove a location
+3) Show stored locations
+
+Option 1 must let the user enter the X and Y coordinates of a point of interest.
+Option 2 must let the user choose which point of interest they want to remove. The coordinate
+pair the user selected must be removed from the storage arrays.
+Option 3 must display all the coordinates that have been stored. It must not display any
+coordinates the user chose to remove.
+
+# C++ Project 2 Description
+Design a C++ program which meets the following requirements. You may write code to test
+your ideas, but this project is intended to exercise the Object-Oriented Programming principles
+we discussed in class. Do not submit a program design which uses fewer than 2 classes.
+Remember that you are designing data types used in the construction of your program. Each
+class should have a single purpose, either storing information or using information to perform a
+task. You may use either inheritance or composition to add functionality to your classes.
+
+Goal:
+A client would like a program which helps them follow recipes in the kitchen and create new
+recipes when they try cooking something new.
+
+Requirements:
+The program must:
+● Store the ingredients used in each recipe, including their names and amounts required.
+● Store instructions for completing the recipe step by step.
+● Allow the user to create new recipes.
+● Allow the user to browse the available recipes and required ingredients.
+● Allow the user to follow a recipe step by step.
+○ Must show each step of the recipe in order -- not all at once.
+
+# C++ Project 3 Description
+Write a C++ program which allows the user to record a series of 2D coordinates (pairs of X and
+Y values) representing the user’s location while traveling. At least two classes must be used to
+construct the program. The program must let the user:
+1) Add a new location (i.e. store a new pair of coordinate values)
+2) View the total distance traveled
+3) View the distance to a given point (input by the user)
+
+# C++ Project 4 Description
+Implement the following data structures in C++ without using the Standard Template Library.
+The classes implementing each data structure must be generic, i.e. using templates to store
+variables of any ordered type.
+1) Stack
+2) Linked List
+3) Queue
+4) Heap
